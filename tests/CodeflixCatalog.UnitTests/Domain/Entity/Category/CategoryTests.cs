@@ -160,12 +160,12 @@ public class CategoryTests
 
                 var category = _categoryTestsFixture.GetValidCategory();
 
-                var newValues = new {Name = "New Category Name", Description = "New Category Description"};
+                var categoryWithNewValues = _categoryTestsFixture.GetValidCategory();
 
-                category.Update(newValues.Name, newValues.Description);
+                category.Update(categoryWithNewValues.Name, categoryWithNewValues.Description);
                 
-                category.Name.Should().Be(newValues.Name);
-                category.Description.Should().Be(newValues.Description);
+                category.Name.Should().Be(categoryWithNewValues.Name);
+                category.Description.Should().Be(categoryWithNewValues.Description);
                 
         }    
     [Fact(DisplayName = nameof(UpdateOnlyName))]
@@ -174,12 +174,12 @@ public class CategoryTests
     {
 
         var category = _categoryTestsFixture.GetValidCategory();
-            var newValues = new {Name = "New Category Name"};
+        var newValues = _categoryTestsFixture.GetValidCategoryName();
             var currentDescription = category.Description;    
 
-            category.Update(newValues.Name);
+            category.Update(newValues);
             
-            category.Name.Should().Be(newValues.Name);
+            category.Name.Should().Be(newValues);
             category.Description.Should().Be(currentDescription);
             
         }
@@ -221,7 +221,7 @@ public class CategoryTests
     public void UpdateErrorWhenNameIsGreaterThan255Chars()
     {
         var category = _categoryTestsFixture.GetValidCategory();
-        var invalidName = String.Join(null, Enumerable.Range(0, 256).Select(_ => "a").ToArray());
+        var invalidName = _categoryTestsFixture.Faker.Lorem.Letter(256);
         Action action = () => category.Update(invalidName);
         
         action.Should()
@@ -235,8 +235,9 @@ public class CategoryTests
     public void UpdateErrorWhenDescriptionIsGreaterThan10kChars()
     {
         var category = _categoryTestsFixture.GetValidCategory();
-        var invalidDescription = String.Join(null, Enumerable.Range(0, 10001).Select(_ => "a").ToArray());
-        Action action = () => category.Update("Category Name", invalidDescription);
+        var newName = _categoryTestsFixture.GetValidCategoryName();
+        var invalidDescription = _categoryTestsFixture.Faker.Lorem.Letter(10001);
+        Action action = () => category.Update(newName, invalidDescription);
         
         action.Should()
             .Throw<EntityValidationException>()
