@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0985DA4F-F89E-4592-90C5-5CD5837AABAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DF0BF6FB-DFC2-4AC7-9BA4-849CFF6A5702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeflixCatalog.UnitTests", "tests\CodeflixCatalog.UnitTests\CodeflixCatalog.UnitTests.csproj", "{18EE8A0B-4D09-4868-9400-ECD1627A1181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeflixCatalogDomain", "src\CodeflixCatalogDomain\CodeflixCatalogDomain.csproj", "{13FB4800-1932-4502-A3A2-1A7D84C229E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18EE8A0B-4D09-4868-9400-ECD1627A1181} = {DF0BF6FB-DFC2-4AC7-9BA4-849CFF6A5702}
+		{13FB4800-1932-4502-A3A2-1A7D84C229E3} = {0985DA4F-F89E-4592-90C5-5CD5837AABAB}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18EE8A0B-4D09-4868-9400-ECD1627A1181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18EE8A0B-4D09-4868-9400-ECD1627A1181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18EE8A0B-4D09-4868-9400-ECD1627A1181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18EE8A0B-4D09-4868-9400-ECD1627A1181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13FB4800-1932-4502-A3A2-1A7D84C229E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13FB4800-1932-4502-A3A2-1A7D84C229E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13FB4800-1932-4502-A3A2-1A7D84C229E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13FB4800-1932-4502-A3A2-1A7D84C229E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

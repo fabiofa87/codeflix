@@ -1,0 +1,12 @@
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/bin/Debug/net7.0/CodeflixCatalogDomain.deps.json
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/bin/Debug/net7.0/CodeflixCatalogDomain.dll
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/bin/Debug/net7.0/CodeflixCatalogDomain.pdb
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/obj/Debug/net7.0/CodeflixCatalogDomain.csproj.AssemblyReference.cache
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/obj/Debug/net7.0/CodeflixCatalogDomain.GeneratedMSBuildEditorConfig.editorconfig
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/obj/Debug/net7.0/CodeflixCatalogDomain.AssemblyInfoInputs.cache
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/obj/Debug/net7.0/CodeflixCatalogDomain.AssemblyInfo.cs
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/obj/Debug/net7.0/CodeflixCatalogDomain.csproj.CoreCompileInputs.cache
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/obj/Debug/net7.0/CodeflixCatalogDomain.dll
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/obj/Debug/net7.0/refint/CodeflixCatalogDomain.dll
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/obj/Debug/net7.0/CodeflixCatalogDomain.pdb
+/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/obj/Debug/net7.0/ref/CodeflixCatalogDomain.dll
