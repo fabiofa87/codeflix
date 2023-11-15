@@ -1,9 +1,10 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=51d6ea2f_002D4fd6_002D49cf_002Db83c_002D5a5297c148fb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CategoryTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/home/fabiofaria/.cache/JetBrains/Rider2023.2/resharper-host/temp/Rider/vAny/CoverageData/_Codeflix Catalog.-290233137/Snapshot/snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=51d6ea2f_002D4fd6_002D49cf_002Db83c_002D5a5297c148fb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CategoryTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::18EE8A0B-4D09-4868-9400-ECD1627A1181::net7.0::CodeflixCatalog.UnitTests.Domain.Entity.Category.CategoryTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c0a9f07e_002D03ac_002D4a26_002Dac45_002D6ae2bbdc6223/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;tests&amp;gt;\&amp;lt;CodeflixCatalog.UnitTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Project Location="/home/fabiofaria/GitRepos/Codeflix Catalog/tests/CodeflixCatalog.UnitTests" Presentation="&amp;lt;tests&amp;gt;\&amp;lt;CodeflixCatalog.UnitTests&amp;gt;" /&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c0a9f07e_002D03ac_002D4a26_002Dac45_002D6ae2bbdc6223/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;tests&amp;gt;\&amp;lt;CodeflixCatalog.UnitTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

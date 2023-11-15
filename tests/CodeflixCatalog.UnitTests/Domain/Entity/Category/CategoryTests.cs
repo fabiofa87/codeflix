@@ -65,7 +65,7 @@ public class CategoryTests
 
         action.Should()
             .Throw<EntityValidationException>()
-            .WithMessage("Name should not be empty or null");
+            .WithMessage("Name should not be null or empty");
 
     }    
     
@@ -80,7 +80,7 @@ public class CategoryTests
 
         action.Should()
             .Throw<EntityValidationException>()
-            .WithMessage("Description should not be empty or null");
+            .WithMessage("Description should not be null");
     }
 
     [Theory(DisplayName = nameof(InstantiateErrorWhenNameIsLessThan3Chars))]
@@ -134,7 +134,7 @@ public class CategoryTests
         
         action.Should()
             .Throw<EntityValidationException>()
-            .WithMessage("Description should not be greater than 10.000 characters");
+            .WithMessage("Description should not be greater than 10000 characters");
     }
     
     [Fact(DisplayName = nameof(Activate))]
@@ -208,7 +208,7 @@ public class CategoryTests
 
         action.Should()
             .Throw<EntityValidationException>()
-            .WithMessage("Name should not be empty or null");
+            .WithMessage("Name should not be null or empty");
     }
     
     [Theory(DisplayName = nameof(UpdateErrorWhenNameIsLessThan3Chars))]
@@ -253,7 +253,7 @@ public class CategoryTests
         
         action.Should()
             .Throw<EntityValidationException>()
-            .WithMessage("Description should not be greater than 10.000 characters");
+            .WithMessage("Description should not be greater than 10000 characters");
 
     }
 }
