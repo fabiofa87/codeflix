@@ -1,3 +1,5 @@
+using System.Collections;
+
 namespace CodeflixCatalog.UnitTests.Domain.Entity.Category;
 
 [Collection(nameof(CategoryTestsFixture))]
@@ -80,11 +82,10 @@ public class CategoryTests
             .Throw<EntityValidationException>()
             .WithMessage("Description should not be empty or null");
     }
-    
+
     [Theory(DisplayName = nameof(InstantiateErrorWhenNameIsLessThan3Chars))]
     [Trait("Domain", "Category - Agregates")]
-    [InlineData("a")]
-    [InlineData("ab")]
+    [MemberData(nameof(GetNamesWithLessThan3Chars), parameters: 10)]
     
     public void InstantiateErrorWhenNameIsLessThan3Chars(string name)
     {
@@ -94,6 +95,16 @@ public class CategoryTests
         action.Should()
             .Throw<EntityValidationException>()
             .WithMessage("Name should not be less than 3 characters");
+    }
+    
+    public static IEnumerable<object[]> GetNamesWithLessThan3Chars(int numberOfTests = 6)
+    {
+        var fixture = new CategoryTestsFixture();
+        for (int i = 0; i < numberOfTests; i++)
+        {
+            var isOdd = i % 2 == 1;
+            yield return new object[] { fixture.GetValidCategoryName()[..(isOdd ? 1 : 2)] };
+        }
     }
     
     [Fact(DisplayName = nameof(InstantiateErrorWhenNameIsMoreThan255Chars))]
@@ -202,8 +213,8 @@ public class CategoryTests
     
     [Theory(DisplayName = nameof(UpdateErrorWhenNameIsLessThan3Chars))]
     [Trait("Domain", "Category - Agregates")]
-    [InlineData("a")]
-    [InlineData("ab")]
+    [MemberData(nameof(GetNamesWithLessThan3Chars), parameters: 10)]
+    
     
     public void UpdateErrorWhenNameIsLessThan3Chars(string name)
     {
@@ -214,6 +225,7 @@ public class CategoryTests
             .Throw<EntityValidationException>()
             .WithMessage("Name should not be less than 3 characters");
     }
+    
     
     [Fact(DisplayName = nameof(UpdateErrorWhenNameIsGreaterThan255Chars))]
     [Trait("Domain", "Category - Agregates")]
