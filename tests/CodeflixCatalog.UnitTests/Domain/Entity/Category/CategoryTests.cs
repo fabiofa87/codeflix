@@ -1,4 +1,3 @@
-using System.Collections;
 
 namespace CodeflixCatalog.UnitTests.Domain.Entity.Category;
 

@@ -1,4 +1,4 @@
-namespace CodeflixCatalogDomain.Domain.Exceptions;
+namespace CodeflixCatalogDomain.Exceptions;
 
 public class EntityValidationException: Exception
 {

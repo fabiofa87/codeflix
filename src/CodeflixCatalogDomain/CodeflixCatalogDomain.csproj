@@ -9,10 +9,16 @@
     <ItemGroup>
       <Compile Remove="Class1.cs" />
       <Compile Remove="Category.cs" />
+      <Compile Remove="Domain\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Class1.cs~" />
+      <None Remove="Domain\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Domain\**" />
     </ItemGroup>
 
 </Project>

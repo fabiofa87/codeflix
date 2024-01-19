@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+Z8dKB/Z8Zp2WKhoOBZn/A4hWKlqicRq74l4OmYQc0dlnAPJcb+ElVJPuI86ZBoKxan0M1qd/OxDrtU+453S1g==",
+  "dgSpecHash": "nOtXTEfe8k7SGkoOgd/WmN78JSm2DF+U0QMmc6CHKsuzVWXu8HFwfA5mKUd1K/hlkQs6z3Ftjg8+i+Bsp5InDw==",
   "success": true,
   "projectFilePath": "/home/fabiofaria/GitRepos/Codeflix Catalog/tests/CodeflixCatalog.UnitTests/CodeflixCatalog.UnitTests.csproj",
   "expectedPackageFiles": [
     "/home/fabiofaria/.nuget/packages/bogus/34.0.2/bogus.34.0.2.nupkg.sha512",
+    "/home/fabiofaria/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/fluentassertions/7.0.0-alpha.3/fluentassertions.7.0.0-alpha.3.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/microsoft.codecoverage/17.3.2/microsoft.codecoverage.17.3.2.nupkg.sha512",
@@ -15,6 +16,7 @@
     "/home/fabiofaria/.nuget/packages/microsoft.testplatform.objectmodel/17.3.2/microsoft.testplatform.objectmodel.17.3.2.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/microsoft.testplatform.testhost/17.3.2/microsoft.testplatform.testhost.17.3.2.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
+    "/home/fabiofaria/.nuget/packages/moq/4.20.70/moq.4.20.70.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg.sha512",
@@ -42,6 +44,7 @@
     "/home/fabiofaria/.nuget/packages/system.console/4.3.0/system.console.4.3.0.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/system.diagnostics.diagnosticsource/4.3.0/system.diagnostics.diagnosticsource.4.3.0.nupkg.sha512",
+    "/home/fabiofaria/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/system.diagnostics.tools/4.3.0/system.diagnostics.tools.4.3.0.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/system.diagnostics.tracing/4.3.0/system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "/home/fabiofaria/.nuget/packages/system.dynamic.runtime/4.0.11/system.dynamic.runtime.4.0.11.nupkg.sha512",

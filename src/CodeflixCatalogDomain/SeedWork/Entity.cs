@@ -1,4 +1,4 @@
-namespace CodeflixCatalogDomain.Domain.SeedWork;
+namespace CodeflixCatalogDomain.SeedWork;
 
 public abstract class Entity
 {   

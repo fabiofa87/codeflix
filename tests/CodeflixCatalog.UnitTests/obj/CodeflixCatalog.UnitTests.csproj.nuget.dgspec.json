@@ -4,6 +4,63 @@
     "/home/fabiofaria/GitRepos/Codeflix Catalog/tests/CodeflixCatalog.UnitTests/CodeflixCatalog.UnitTests.csproj": {}
   },
   "projects": {
+    "/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalog.Application/CodeflixCatalog.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalog.Application/CodeflixCatalog.Application.csproj",
+        "projectName": "CodeflixCatalog.Application",
+        "projectPath": "/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalog.Application/CodeflixCatalog.Application.csproj",
+        "packagesPath": "/home/fabiofaria/.nuget/packages/",
+        "outputPath": "/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalog.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/fabiofaria/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/CodeflixCatalogDomain.csproj": {
+                "projectPath": "/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/CodeflixCatalogDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/CodeflixCatalogDomain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -53,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -79,6 +136,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalog.Application/CodeflixCatalog.Application.csproj": {
+                "projectPath": "/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalog.Application/CodeflixCatalog.Application.csproj"
+              },
               "/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/CodeflixCatalogDomain.csproj": {
                 "projectPath": "/home/fabiofaria/GitRepos/Codeflix Catalog/src/CodeflixCatalogDomain/CodeflixCatalogDomain.csproj"
               }
@@ -106,6 +166,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.3.2, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -140,7 +204,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
         }
       }
     }

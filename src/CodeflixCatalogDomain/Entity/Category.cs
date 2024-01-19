@@ -1,7 +1,7 @@
-using CodeflixCatalogDomain.Domain.SeedWork;
-using CodeflixCatalogDomain.Domain.Validation;
+using CodeflixCatalogDomain.SeedWork;
+using CodeflixCatalogDomain.Validation;
 
-namespace CodeflixCatalogDomain.Domain.Entity;
+namespace CodeflixCatalogDomain.Entity;
 
 public class Category : AggregateRoot
 {
