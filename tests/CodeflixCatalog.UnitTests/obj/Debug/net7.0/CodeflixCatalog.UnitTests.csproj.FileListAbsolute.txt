@@ -111,3 +111,6 @@
 /home/fabiofaria/GitRepos/Codeflix Catalog/tests/CodeflixCatalog.UnitTests/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll
 /home/fabiofaria/GitRepos/Codeflix Catalog/tests/CodeflixCatalog.UnitTests/bin/Debug/net7.0/CodeflixCatalog.Application.dll
 /home/fabiofaria/GitRepos/Codeflix Catalog/tests/CodeflixCatalog.UnitTests/bin/Debug/net7.0/CodeflixCatalog.Application.pdb
+/home/fabiofaria/GitRepos/Codeflix Catalog/tests/CodeflixCatalog.UnitTests/bin/Debug/net7.0/MediatR.dll
+/home/fabiofaria/GitRepos/Codeflix Catalog/tests/CodeflixCatalog.UnitTests/bin/Debug/net7.0/MediatR.Contracts.dll
+/home/fabiofaria/GitRepos/Codeflix Catalog/tests/CodeflixCatalog.UnitTests/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll

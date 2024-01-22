@@ -85,10 +85,10 @@ public class CreateCategoryTest
         // name cannot be higher than 255 chars
         var invalidInputLongName = fixture.GetInput();
         var categoryNameTooLong = fixture.Faker.Commerce.ProductName();
-        
+
         while (categoryNameTooLong.Length < 256)
             categoryNameTooLong = $"{categoryNameTooLong} {fixture.Faker.Commerce.ProductName()}";
-        
+
         invalidInputLongName.Name =
             invalidInputLongName.Name +
             new string('a', 255 - invalidInputLongName.Name.Length + 1);
@@ -98,12 +98,29 @@ public class CreateCategoryTest
             invalidInputLongName,
             "Name should not be greater than 255 characters"
         });
-        
+
         // description cannot be null
-            
+
         var invalidInputNullDescription = fixture.GetInput();
+        invalidInputNullDescription.Description = null;
+        invalidInputList.Add(new object[]
+        {
+            invalidInputNullDescription,
+            "Description should not be null"
+        });
         
+        // description is longer than 10000 chars
         
+        var invalidInputLongDescription = fixture.GetInput();
+        invalidInputLongDescription.Description = fixture.Faker.Commerce.ProductDescription();
+        while (invalidInputLongDescription.Description.Length < 10001)
+            invalidInputLongDescription.Description = $"{invalidInputLongDescription.Description} {fixture.Faker.Commerce.ProductDescription()}";
+        
+        invalidInputList.Add(new object[]
+        {
+            invalidInputLongDescription,
+            "Description should not be greater than 10000 characters"
+        });
         
     return invalidInputList;
     }

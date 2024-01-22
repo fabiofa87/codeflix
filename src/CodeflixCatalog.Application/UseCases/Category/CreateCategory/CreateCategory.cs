@@ -1,6 +1,7 @@
 using CodeflixCatalog.Application.Interfaces;
 using CodeflixCatalogDomain.Repository;
 using DomainEntity = CodeflixCatalogDomain.Entity;
+
 namespace CodeflixCatalog.Application.UseCases.CreateCategory.Category;
 
 public class CreateCategory : ICreateCategory
@@ -22,8 +23,6 @@ public class CreateCategory : ICreateCategory
             );
         await _categoryRepository.Insert(category, cancellationToken);
         await _unitOfWork.Commit(cancellationToken);
-        return new CreateCategoryOutput(category.Id, category.Name, category.Description, 
-            category.Is_Active, 
-            category.Created_At);
+        return CreateCategoryOutput.FromCategory(category);
     }
 }

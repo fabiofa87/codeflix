@@ -1,5 +1,4 @@
-using System.Runtime.InteropServices.JavaScript;
-
+using DomainEntity = CodeflixCatalogDomain.Entity;
 namespace CodeflixCatalog.Application.UseCases.CreateCategory.Category;
 
 public class CreateCategoryOutput
@@ -24,4 +23,11 @@ public class CreateCategoryOutput
         IsActive = isActive;
         CreatedAt = createdAt;
     }
+    
+    public static CreateCategoryOutput FromCategory(DomainEntity.Category category)  => new CreateCategoryOutput(
+        category.Id, 
+        category.Name, 
+        category.Description, 
+        category.Is_Active, 
+        category.Created_At);
 }
