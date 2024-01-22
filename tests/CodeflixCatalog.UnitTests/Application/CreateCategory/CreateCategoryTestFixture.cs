@@ -1,6 +1,5 @@
 using CodeflixCatalog.Application.Interfaces;
 using CodeflixCatalog.UnitTests.Common;
-using CodeflixCatalogDomain.Repository;
 using Moq;
 
 namespace CodeflixCatalog.UnitTests.Application.CreateCategory;
