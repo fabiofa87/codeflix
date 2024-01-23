@@ -1,8 +1,9 @@
+using CodeflixCatalog.Application.UseCases.Category.Common;
 using MediatR;
 
 namespace CodeflixCatalog.Application.UseCases.CreateCategory.Category;
 
-public interface ICreateCategory : IRequestHandler<CreateCategoryInput, CreateCategoryOutput>
+public interface ICreateCategory : IRequestHandler<CreateCategoryInput, CategoryModelOutput>
 {
-    public Task<CreateCategoryOutput> Handle(CreateCategoryInput input, CancellationToken cancellationToken);
+   
 }
